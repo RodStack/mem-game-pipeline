@@ -1,0 +1,99 @@
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: #003559;
+    color: #ffffff; 
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: auto;
+    margin: 20px auto; /* Ajuste de margen */
+    padding: 10px;
+    background: #006DAA;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25); 
+    border-radius: 15px; 
+}
+
+h1 {
+    color: white; 
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.instructions {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #adbac7;
+}
+
+#game-board {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espacio entre las cartas */
+    padding: 20px;
+}
+
+.card {
+    flex: 0 1 calc(20% - 20px); /* 20% del ancho del contenedor con espacio entre las cartas */
+    max-width: calc(20% - 20px); /* Tamaño máximo de las cartas con espacio entre ellas */
+    height: auto;
+    background-color: #565c6f;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    visibility: hidden; /* Ocultar imágenes por defecto */
+    display: block;
+}
+
+.card.show img {
+    visibility: visible; /* Mostrar imagen cuando la tarjeta está volteada */
+}
+
+#start-game {
+    background-color: #4caf50;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-bottom: 10px;
+}
+
+#start-game:hover {
+    background-color: #43a047; /* Más oscuro al pasar el mouse */
+    transform: scale(1.05); /* Ligeramente agrandado al pasar el mouse */
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        margin: 10px auto; /* Ajuste de margen */
+        padding: 5px; /* Ajuste de relleno */
+    }
+
+    h1 {
+        font-size: 30px; /* Tamaño de título reducido para pantallas pequeñas */
+    }
+
+    .instructions {
+        font-size: 18px; /* Tamaño de instrucciones reducido para pantallas pequeñas */
+    }
+
+    .card {
+        flex: 0 1 calc(33.33% - 20px); /* Ajuste para pantallas pequeñas */
+        max-width: calc(33.33% - 20px); /* Ajuste para pantallas pequeñas */
+    }
+}

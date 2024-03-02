@@ -1,7 +1,5 @@
 # Despliegue Continuo usando AWS Code Pipeline y S3
 
-Este repositorio contiene los archivos de código utilizados en este video de YouTube.
-
 ## En Resumen
 
 El código de un juego está alojado en GitHub. Creamos un bucket S3 para el alojamiento de un sitio web estático, luego creamos un pipeline de despliegue continuo (usando AWS Code Pipeline) para desplegar automáticamente el código cada vez que se realizan cambios.

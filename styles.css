@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Ojuju:wght@200..800&display=swap');
 body {
-    font-family: "Ojuju", "Segoe UI", sans-serif;
+    font-family: "Josefin Sans", "Segoe UI", sans-serif;
     background: #003559;
     color: #ffffff; 
     text-align: center;

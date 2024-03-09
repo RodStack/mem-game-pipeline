@@ -98,8 +98,8 @@ document.addEventListener('DOMContentLoaded', () => {
             cards[secondCardId].removeEventListener('click', flipCard);
             cardsWon.push(cardsChosen);
         } else {
-            cards[firstCardId].setAttribute('src', 'images/blank.png');
-            cards[secondCardId].setAttribute('src', 'images/blank.png');
+            cards[firstCardId].setAttribute('src', 'images/card.png');
+            cards[secondCardId].setAttribute('src', 'images/card.png');
         }
 
         cardsChosen = [];
@@ -110,4 +110,3 @@ document.addEventListener('DOMContentLoaded', () => {
     startButton.addEventListener('click', createBoard);
     initial_text()
 });
-
